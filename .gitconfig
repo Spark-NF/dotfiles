@@ -1,0 +1,53 @@
+[alias]
+	# Shortcut aliases
+	d = diff
+	s = status
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	re = rebase
+	pr = pull --rebase
+	prs = pull --rebase --autostash
+	cp = cherry-pick
+
+	# Utils
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all --abbrev-commit
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	amend = commit --amend -C HEAD
+	last = diff HEAD^ HEAD
+	contributors = shortlog --summary --numbered
+	changes = "!f() { git diff \"$1^\" \"$1\"; }; f"
+
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+
+	# Windows
+	autocrlf = true
+	filemode = false
+
+[branch]
+	autosetuprebase = always
+
+[push]
+	default = simple
+	followTags = true
+
+# Diff-so-fancy
+[pager]
+	log = ~/bin/diff-so-fancy | less --tabs=4 -RFX
+	show = ~/bin/diff-so-fancy | less --tabs=4 -RFX
+	diff = ~/bin/diff-so-fancy | less --tabs=4 -RFX
+[interactive]
+	diffFilter = ~/bin/diff-so-fancy
+
+[credential]
+	helper = cache --timeout 3600
+
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
