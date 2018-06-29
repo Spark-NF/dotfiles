@@ -1,3 +1,9 @@
+# ZSH shell forcing on some Cygwin
+if [ "$SHELL" = "/bin/zsh" ]; then
+    exec zsh
+    return
+fi
+
 source ~/bin/git-prompt.sh
 
 # Git in PS1
