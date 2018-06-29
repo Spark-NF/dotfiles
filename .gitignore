@@ -1,0 +1,5 @@
+*.dll.config
+*.csproj.DotSettings
+Thumbs.db
+Desktop.ini
+*.pyc
