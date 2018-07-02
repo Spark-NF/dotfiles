@@ -21,6 +21,10 @@ POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND='black'
 POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND='yellow'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
+# Oh-my-zsh config
+CASE_SENSITIVE="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
 # Oh-my-zsh plugins
 plugins=(gitfast zsh-syntax-highlighting zsh-autosuggestions)
 
