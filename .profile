@@ -10,6 +10,11 @@ alias gdb="gdb -q"
 alias ag='ag --pager="less -XFR"'
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+# Colorize grep
+alias grep='grep --color'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
 # CD up aliases
 alias ..="cd .."
 alias ...="cd ../.."
