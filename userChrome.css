@@ -1,0 +1,23 @@
+/* Files */
+#personal-bookmarks toolbarbutton.bookmark-item {
+    margin: 0 -3px !important;
+}
+#personal-bookmarks toolbarbutton.bookmark-item:hover {
+    margin: -1px 0 -1px -3px !important;
+}
+#personal-bookmarks .bookmark-item > .toolbarbutton-text {
+    display: none !important;
+}
+#personal-bookmarks .bookmark-item:hover > .toolbarbutton-text {
+    display: -moz-box !important;
+}
+
+
+/* Folder */
+#personal-bookmarks .bookmark-item[container] > .toolbarbutton-text {
+    display: -moz-box !important;
+    margin: 0 2px 0 0 !important;
+}
+#personal-bookmarks toolbarbutton.bookmark-item[container]:hover {
+    margin: -1px -3px !important;
+}
