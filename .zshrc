@@ -37,3 +37,6 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(gitfast zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+
+# Travis tool
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh

@@ -20,3 +20,6 @@ PROMPT_COMMAND='__git_ps1 "$(echo "\n\[\033[1;37m\]\342\224\214(`if [[ ${EUID} =
 
 # Aliases
 source ~/.profile
+
+# Travis tool
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
