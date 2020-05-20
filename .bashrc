@@ -1,7 +1,9 @@
 # ZSH shell forcing on some Cygwin
 if [ "$SHELL" = "/bin/zsh" ]; then
-    exec zsh
-    return
+    if which zsh >/dev/null; then
+        exec zsh
+        return
+    fi
 fi
 
 source ~/bin/git-prompt.sh
