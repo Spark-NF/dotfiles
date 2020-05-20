@@ -51,3 +51,7 @@
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+
+[user]
+	email = spark_ps@hotmail.fr
+	name = Spark-NF
