@@ -56,3 +56,6 @@
 [user]
 	email = spark_ps@hotmail.fr
 	name = Spark-NF
+
+[commit]
+	gpgSign = true
