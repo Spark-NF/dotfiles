@@ -1,7 +1,7 @@
 # Installation
 
 ```sh
-git clone --bare https://github.com/Spark-NF/dotfiles.git $HOME/.dotfiles
+git clone --bare git@github.com:Spark-NF/dotfiles.git $HOME/.dotfiles
 mv $HOME/.bashrc $HOME/.bashrc.old
 mv $HOME/.profile $HOME/.profile.old
 # ... and other files that might be overwritten
