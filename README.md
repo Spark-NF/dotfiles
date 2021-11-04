@@ -19,3 +19,9 @@ git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout
 
 ## Utils
 * [delta](https://github.com/dandavison/delta)
+
+# GUI
+
+## Terminal colors
+### iTerm2
+[Spark.itermcolors](Spark.itermcolors)
