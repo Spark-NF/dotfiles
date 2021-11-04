@@ -24,6 +24,9 @@ alias g="git"
 alias gdb="gdb -q"
 alias ag='ag --pager="less -XFR"'
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+if [[ $platform == 'macos' ]]; then
+    alias allow='sudo xattr -r -d com.apple.quarantine'
+fi
 
 # Colorize grep
 alias grep='grep --color'
