@@ -35,13 +35,14 @@
 	default = simple
 	followTags = true
 
-# Diff-so-fancy
+# Delta
 [pager]
-	log = ~/bin/diff-so-fancy | less --tabs=4 -RFX
-	show = ~/bin/diff-so-fancy | less --tabs=4 -RFX
-	diff = ~/bin/diff-so-fancy | less --tabs=4 -RFX
+	log = delta --line-numbers
+	show = delta --line-numbers
+	diff = delta --line-numbers
+	reflog = delta --line-numbers
 [interactive]
-	diffFilter = ~/bin/diff-so-fancy
+	diffFilter = delta --color-only --features=interactive --line-numbers
 
 [credential]
 	helper = cache --timeout 3600

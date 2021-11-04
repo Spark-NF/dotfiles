@@ -18,4 +18,4 @@ git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout
 * [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 ## Utils
-* [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
+* [delta](https://github.com/dandavison/delta)
