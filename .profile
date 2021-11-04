@@ -1,8 +1,23 @@
 # Home bin
 export PATH=$PATH:~/bin
 
+# Detect platform
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+    platform='linux'
+elif [[ "$unamestr" == 'FreeBSD' ]]; then
+    platform='freebsd'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+    platform='macos'
+fi
+
 # Aliases
-alias ls='ls -F --color=auto --show-control-chars'
+if [[ $platform == 'linux' ]]; then
+    alias ls='ls -F --color=auto --show-control-chars'
+elif [[ $platform == 'freebsd' || $platform == 'macos' ]]; then
+    alias ls='ls -F -G'
+fi
 alias ll='ls -l'
 alias make="make -s"
 alias g="git"
